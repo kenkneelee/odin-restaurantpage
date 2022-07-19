@@ -3,9 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
+  mode: 'development', 
     entry: {
         index: "./src/index.js",
         testFunction: "./src/testFunction.js",
+    },
+    devtool: 'inline-source-map',
+    devServer: {
+      static: './dist',
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -17,6 +22,9 @@ module.exports = {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist"),
         clean:true,
+    },
+    optimization: {
+      runtimeChunk: 'single',
     },
     module: {
         rules: [
