@@ -29,7 +29,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../images/logo.png');
+    background-image: url('../images/bgSlate.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     border: 0.25rem solid #D9C077;
