@@ -7,6 +7,8 @@ module.exports = {
     entry: {
         index: "./src/index.js",
         testFunction: "./src/testFunction.js",
+        loadNav: "./src/loadNav.js",
+        loadFooter: "./src/loadFooter.js"
     },
     devtool: 'inline-source-map',
     devServer: {

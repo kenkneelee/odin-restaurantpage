@@ -1,13 +1,13 @@
 import "./styles/style.css";
-import logo from "./images/logo.png";
 import printStuff from "./testFunction";
 import navBg from "./images/bgSlate.jpg";
 // import map1 from "./images/map1.jpeg"
 
-const nav = document.getElementById("nav");
-const mainLogo = document.getElementById("mainLogo");
+import loadNav from "./loadNav";
+loadNav();
 
-mainLogo.src = logo;
+import loadFooter from "./loadFooter";
+loadFooter();
 
 // menu module
 const menuPics = document.getElementsByClassName("menuPic");
@@ -17,6 +17,8 @@ for (let i=0; i< menuPics.length; i++) {
     let menuPicture = require(`./images/menu/menu${i}.png`);
     menuPics[i].src = menuPicture;
 }
+
+
 
 // const mapPin1 = document.getElementById("mapPin1");
 // mapPin1.src = map1;
