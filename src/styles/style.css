@@ -1,8 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
-
 body,
 html {
     background-color: #73242a;
@@ -10,23 +5,21 @@ html {
     box-sizing: border-box;
     font-family: "Caveat", cursive;
 }
-
 html {
     border: 1rem solid #73242a;
     font-size: 18px;
-}
-
-#content {
     color: #d9c077;
+}
+#content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
 }
 
+/* nav bar */
 #nav {
     width: 100%;
-    height: 30%;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,12 +30,10 @@ html {
     border: 2px solid #d9c077;
     box-sizing: border-box;
 }
-
 #mainLogo {
     max-height: 100%;
-    min-height: 0;
+    min-height: 15vh;
 }
-
 #links {
     width: 100%;
     display: flex;
@@ -52,39 +43,33 @@ html {
     background-color: #000000a2;
     box-sizing: border-box;
     margin-top: 0;
-}
-
-ul {
     padding: 0;
-}
-
-li {
-    width: 25%;
     text-align: center;
+
+}
+#links li {
+    width: 25%;
     padding: 1rem 0;
 }
-
-li:hover {
+#links li:hover {
     background-color: #000000ce;
 }
+/* end of nav bar*/
 
 #active {
     width: 100%;
-    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* menu  */
 #menuItems {
-    /* width: 90%; */
     border: 2px solid #d9c077;
-    /* border-radius: 20px; */
     background-image: url("https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvbnMxMzY2MS1pbWFnZS1rd3Z5ZHFoZi5qcGc.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .menuItem {
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
@@ -94,50 +79,43 @@ li:hover {
     padding: 1rem;
     background-color: rgba(37, 37, 37, 0.75);
 }
-
+.menuItem:hover,
+.locationCard:hover {
+    background-color: rgba(37, 37, 37, 0.9);
+}
 .menuPic {
-    max-width: 50%;
+    max-width: 30%;
     border: 1px solid #d9c077;
     border-radius: 20px;
     background-color: #73242b75;
     padding: 1rem;
 }
-
-h3 {
-    font-family: "Caveat", cursive;
-}
-
 .itemDescription {
     text-align: center;
-    font-family: "Caveat", cursive;
 }
-
 .itemPrice {
-    font-family: "Caveat", cursive;
     justify-self: center;
     text-decoration: underline;
 }
-
 #credit {
     text-align: center;
     background-color: rgba(37, 37, 37, 0.75);
 }
-
 #credit a {
     color: grey;
     text-decoration: none;
     font-size: 0.5rem;
 }
+/* end of menu section */
 
+/* locations */
 #locationCards {
     border: 2px solid #d9c077;
-    /* border-radius: 20px; */
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("https://images.unsplash.com/photo-1546636889-ba9fdd63583e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1915&q=80");
 }
-
 .locationCard {
     display: grid;
     align-items: center;
@@ -145,41 +123,42 @@ h3 {
     grid-template-columns: 1fr 1fr;
     background-color: rgba(37, 37, 37, 0.75);
 }
-
 iframe {
     border-radius: 20px;
     max-width: 100%;
     margin: 2rem;
 }
-
 .locationInfo {
     text-align: center;
 }
+/* end of locations section */
 
+
+/* about us */
 #aboutUs {
     text-align: center;
     border: 2px solid #d9c077;
-    /* border-radius: 20px; */
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("https://images.unsplash.com/photo-1546636889-ba9fdd63583e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1915&q=80");
+    background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzOTY0My1pbWFnZS1rd3Z5ZzFieC5qcGc.jpg");
 }
-
 #aboutContent {
     background-color: rgba(37, 37, 37, 0.75);
 }
-
 #aboutContent h3,
 #aboutContent p {
     margin: 0;
     padding: 1rem;
 }
-
 #aboutContent img {
     border: 2px solid #d9c077;
+    width: 30%;
 }
+/* end of about us section */
 
+
+/* order online */
 #orderOnline {
     text-align: center;
     border: 2px solid #d9c077;
@@ -189,7 +168,6 @@ iframe {
     background-repeat: no-repeat;
     background-image: url("https://images.unsplash.com/photo-1548695607-9c73430ba065?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1625&q=80");
 }
-
 #orderContent {
     display: flex;
     flex-direction: column;
@@ -197,13 +175,14 @@ iframe {
     justify-content: space-evenly;
     background-color: rgba(37, 37, 37, 0.75);
 }
-
 #orderContent img {
     max-width: 5rem;
     border-radius: 1rem;
     margin: 2rem;
 }
+/* end of order online section */
 
+/* footer */
 footer {
     text-align: center;
     border: 2px solid #d9c077;
@@ -217,12 +196,15 @@ footer {
     background-image: url("https://coastalphysio.ca/wp-content/uploads/2016/11/footer-texture-bg.jpg");
     background-size: cover;
 }
-
 footer a {
     color: #d9c077;
 }
+/* end of footer section */
 
+/* color reference */
 #colors {
     color: #73242a;
     color: #d9c077;
+    color: rgba(37, 37, 37, 0.75);
+
 }
