@@ -12,13 +12,3 @@ export default function loadFooter() {
     content.appendChild(footer);
 }
 
-/* <footer>
-<p>
-    Made by
-    <a href="https://github.com/kenkneelee">Kenny Lee</a>
-    for
-    <a href="https://www.theodinproject.com/"
-        >The Odin Project.</a
-    >
-</p>
-</footer> */

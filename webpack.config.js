@@ -1,33 +1,32 @@
 const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: 'development', 
+    mode: "development",
     entry: {
         index: "./src/index.js",
         testFunction: "./src/testFunction.js",
         loadNav: "./src/loadNav.js",
         loadFooter: "./src/loadFooter.js"
     },
-    devtool: 'inline-source-map',
+    devtool: "inline-source-map",
     devServer: {
-      static: './dist',
+        static: "./dist",
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        title: 'Odin Restaurant Page',
-        template: './src/index.html',
-      }),
+        new HtmlWebpackPlugin({
+            title: "Odin Restaurant Page",
+            template: "./src/index.html",
+        }),
     ],
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist"),
-        publicPath: './',
-        clean:true,
+        // publicPath: "./",
+        clean: true,
     },
     optimization: {
-      runtimeChunk: 'single',
+        runtimeChunk: "single",
     },
     module: {
         rules: [
@@ -39,8 +38,8 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
                 generator: {
-                  filename: 'images/[hash][ext][query]'
-                } 
+                    filename: "images/[hash][ext][query]",
+                },
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,

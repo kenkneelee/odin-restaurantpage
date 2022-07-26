@@ -28,7 +28,6 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid #d9c077;
-    box-sizing: border-box;
 }
 #mainLogo {
     max-height: 100%;
@@ -45,7 +44,6 @@ html {
     margin-top: 0;
     padding: 0;
     text-align: center;
-
 }
 #links li {
     width: 25%;
@@ -133,7 +131,6 @@ iframe {
 }
 /* end of locations section */
 
-
 /* about us */
 #aboutUs {
     text-align: center;
@@ -156,7 +153,6 @@ iframe {
     width: 30%;
 }
 /* end of about us section */
-
 
 /* order online */
 #orderOnline {
@@ -206,5 +202,4 @@ footer a {
     color: #73242a;
     color: #d9c077;
     color: rgba(37, 37, 37, 0.75);
-
 }
