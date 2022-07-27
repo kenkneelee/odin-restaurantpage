@@ -51,6 +51,7 @@ html {
 }
 #links li:hover {
     background-color: #000000ce;
+    cursor:pointer;
 }
 /* end of nav bar*/
 
