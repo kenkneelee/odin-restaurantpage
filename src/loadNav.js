@@ -1,7 +1,7 @@
 import logo from "./images/logo.png";
 
 export default function loadNav() {
-    const content = document.getElementById("content");
+    const body = document.getElementsByTagName("body")[0];
 
     const nav = document.createElement("div");
     nav.id="nav";
@@ -11,9 +11,13 @@ export default function loadNav() {
     const links = document.createElement("ul");
     links.id="links";
     const link1 = document.createElement("li");
+    link1.id="link1";
     const link2 = document.createElement("li");
+    link2.id="link2";
     const link3 = document.createElement("li");
+    link3.id="link3";
     const link4 = document.createElement("li");
+    link4.id="link4";
 
     link1.textContent = "Menu";
     link2.textContent = "Locations";
@@ -29,6 +33,6 @@ export default function loadNav() {
     nav.appendChild (mainLogo);
     nav.appendChild (links);
 
-    content.appendChild(nav);
+    body.prepend(nav);
     // return element
 }

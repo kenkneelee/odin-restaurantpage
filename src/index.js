@@ -5,11 +5,25 @@ printStuff();
 import loadNav from "./loadNav";
 loadNav();
 
+import loadMenu from "./loadMenu";
+loadMenu();
+
+import loadLocations from "./loadLocations";
+loadLocations();
+
+import loadAbout from "./loadAbout";
+loadAbout();
+
+import loadOrder from "./loadOrder";
+loadOrder();
+
 import loadFooter from "./loadFooter";
 loadFooter();
 
 
-console.log("hellao");
+
+
+console.log("hello");
 // menu module
 // const menuPics = document.getElementsByClassName("menuPic");
 // for (let i = 0; i < menuPics.length; i++) {
