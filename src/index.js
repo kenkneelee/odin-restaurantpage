@@ -5,6 +5,9 @@ printStuff();
 import loadNav from "./loadNav";
 loadNav();
 
+import loadMain from "./loadMain";
+loadMain();
+
 import loadMenu from "./loadMenu";
 loadMenu();
 
