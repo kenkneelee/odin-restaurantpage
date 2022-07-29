@@ -67,12 +67,12 @@ export default function loadMenu() {
         infoName.textContent = name;
         const infoDesc = document.createElement("p");
         infoDesc.textContent = description;
-        const infoPrice = document.createElement("div");
-        infoPrice.textContent = price;
-
         itemDescription.append(infoName, infoDesc);
 
-        item.append(itemImage, itemDescription, infoPrice);
+        const itemPrice = document.createElement("div");
+        itemPrice.textContent = price;
+
+        item.append(itemImage, itemDescription, itemPrice);
         menuContainer.appendChild(item);
     }
 }

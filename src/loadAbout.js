@@ -15,6 +15,7 @@ export default function loadAbout() {
 
         const aboutContent = document.createElement("div");
         aboutContent.id = "aboutContent";
+
         const aboutHead = document.createElement("h3");
         aboutHead.textContent = "A tradition of Excellence";
         const aboutImage1 = document.createElement("img");
@@ -23,12 +24,14 @@ export default function loadAbout() {
         const aboutP1 = document.createElement("p");
         aboutP1.textContent =
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat, velit sed auctor malesuada, ipsum mi euismod magna, at blandit dui libero at magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque in est in mauris mollis varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ullamcorper leo ac mauris sagittis gravida. Praesent rhoncus faucibus felis non ultricies. Proin neque ipsum, mattis sed ex vitae, sagittis auctor purus. Curabitur non odio augue. Mauris odio lectus, tempus dictum leo eu, fermentum malesuada arcu.";
+
         const aboutImage2 = document.createElement("img");
         aboutImage2.src =
             "https://static.wikia.nocookie.net/spongebob/images/7/73/Pizza_Delivery_background-28.JPG/";
         const aboutP2 = document.createElement("p");
         aboutP2.textContent =
             "Nam a pellentesque magna, sit amet tempus orci. Fusce tincidunt ante ac augue vestibulum molestie. Praesent ac nisi nec tellus ultrices elementum. Sed tempor ultricies tristique. Sed iaculis, ligula vitae pellentesque sagittis, metus nisi dictum lacus, nec volutpat ipsum velit vel lectus. Sed quis felis finibus, dictum augue a, porttitor nisl. Mauris id congue turpis.";
+
         const aboutImage3 = document.createElement("img");
         aboutImage3.src =
             "https://static.wikia.nocookie.net/spongebob/images/4/49/Pizza_Delivery_background-15.JPG/";
@@ -45,16 +48,7 @@ export default function loadAbout() {
             aboutImage3,
             aboutP3
         );
-        // aboutContent.appendChild(aboutHead);
-        // aboutContent.appendChild(aboutImage1);
-        // aboutContent.appendChild(aboutP1);
-        // aboutContent.appendChild(aboutImage2);
-        // aboutContent.appendChild(aboutP2);
-        // aboutContent.appendChild(aboutImage3);
-        // aboutContent.appendChild(aboutP3);
-
         aboutContainer.appendChild(aboutContent);
-
         content.appendChild(aboutContainer);
     });
 }

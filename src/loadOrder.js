@@ -25,14 +25,9 @@ export default function loadOrder() {
         const skip = document.createElement("img");
         skip.src =
             "https://pbs.twimg.com/profile_images/1451592207295787014/HG87IRDA_400x400.jpg";
-        orderContent.appendChild(subHead);
-        orderContent.appendChild(uber);
-        orderContent.appendChild(doordash);
-        orderContent.appendChild(skip);
+        orderContent.appendChild(subHead, uber, doordash, skip);
 
         orderContainer.appendChild(orderContent);
-        // orderContent.appendChild(subHead);
-        // orderContent.appendChild(subHead);
 
         content.appendChild(orderContainer);
     });

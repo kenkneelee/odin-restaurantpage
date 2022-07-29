@@ -64,7 +64,8 @@ html {
 }
 
 #mainImg {
-    border: 8px solid #d9c077;
+    border: 6px solid #d9c077;
+    max-width:10vw;
 }
 
 /* menu  */

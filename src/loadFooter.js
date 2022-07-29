@@ -1,5 +1,4 @@
 export default function loadFooter() {
-    const content = document.getElementById("content");
     const body = document.getElementsByTagName("body")[0];
     const footer = document.createElement ("footer")
     const footerText = document.createElement("p");
