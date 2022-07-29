@@ -25,7 +25,7 @@ export default function loadOrder() {
         const skip = document.createElement("img");
         skip.src =
             "https://pbs.twimg.com/profile_images/1451592207295787014/HG87IRDA_400x400.jpg";
-        orderContent.appendChild(subHead, uber, doordash, skip);
+        orderContent.append(subHead, uber, doordash, skip);
 
         orderContainer.appendChild(orderContent);
 

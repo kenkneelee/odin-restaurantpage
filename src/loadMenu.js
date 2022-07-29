@@ -9,7 +9,6 @@ export default function loadMenu() {
     const menuLink = document.getElementById("link1");
 
     const menuContainer = document.createElement("div");
-    menuContainer.textContent = "test";
 
     menuLink.addEventListener("click", () => {
         content.textContent = "";
@@ -76,90 +75,3 @@ export default function loadMenu() {
         menuContainer.appendChild(item);
     }
 }
-
-/* <h2>Menu</h2>
-                <div id="menuItems">
-                    <div class="menuItem">
-                        <img id="menu1" class="menuPic" />
-                        <div class="itemDescription">
-                            <h3>Krusty Krab Pizza</h3>
-                            <p>
-                                This is a sample description for the 'za. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing
-                                elit. Vivamus volutpat congue vehicula. Nullam
-                                ultricies egestas metus ac accumsan.
-                                Pellentesque mauris quam, iaculis id massa quis,
-                                aliquet imperdiet odio.
-                            </p>
-                        </div>
-                        <div class="itemPrice">19</div>
-                    </div>
-                    <div class="menuItem">
-                        <img id="menu2" class="menuPic" />
-                        <div class="itemDescription">
-                            <h3>Pioneer Pizza</h3>
-                            <p>
-                                This is a sample description for the 'za. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing
-                                elit. Vivamus volutpat congue vehicula. Nullam
-                                ultricies egestas metus ac accumsan.
-                                Pellentesque mauris quam, iaculis id massa quis,
-                                aliquet imperdiet odio.
-                            </p>
-                        </div>
-                        <div class="itemPrice">23</div>
-                    </div>
-                    <div class="menuItem">
-                        <img id="menu3" class="menuPic" />
-                        <div class="itemDescription">
-                            <h3>Bikini Atoll Pizza</h3>
-                            <p>
-                                This is a sample description for the 'za. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing
-                                elit. Vivamus volutpat congue vehicula. Nullam
-                                ultricies egestas metus ac accumsan.
-                                Pellentesque mauris quam, iaculis id massa quis,
-                                aliquet imperdiet odio.
-                            </p>
-                        </div>
-                        <div class="itemPrice">17</div>
-                    </div>
-                    <div class="menuItem">
-                        <img id="menu4" class="menuPic" />
-                        <div class="itemDescription">
-                            <h3>Sandy Cheeks Pizza</h3>
-                            <p>
-                                This is a sample description for the 'za. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing
-                                elit. Vivamus volutpat congue vehicula. Nullam
-                                ultricies egestas metus ac accumsan.
-                                Pellentesque mauris quam, iaculis id massa quis,
-                                aliquet imperdiet odio.
-                            </p>
-                        </div>
-                        <div class="itemPrice">27</div>
-                    </div>
-                    <div class="menuItem">
-                        <img id="menu5" class="menuPic" />
-                        <div class="itemDescription">
-                            <h3>Sweet Victory Pizza</h3>
-                            <p>
-                                This is a sample description for the 'za. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing
-                                elit. Vivamus volutpat congue vehicula. Nullam
-                                ultricies egestas metus ac accumsan.
-                                Pellentesque mauris quam, iaculis id massa quis,
-                                aliquet imperdiet odio.
-                            </p>
-                        </div>
-                        <div class="itemPrice">29</div>
-                    </div>
-                    <div id="credit">
-                        <a
-                            href="https://www.freepik.com/vectors/pizza-toppings"
-                        >
-                            Pizza toppings vector created by pch.vector -
-                            www.freepik.com</a
-                        >
-                    </div>
-                </div> */
